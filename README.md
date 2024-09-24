@@ -11,6 +11,7 @@ a chrome extension to mute youtube add
 #### For Windows:
 - Double-click on the `install.bat` file.
 - Chrome will open the Extensions page.
+-if didnt open paste this is the url bar- chrome://extensions/
 - Enable **Developer Mode** in the top right corner.
 - Click **"Load unpacked"** and select the unzipped extension folder.
 

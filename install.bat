@@ -1,12 +1,18 @@
 @echo off
-echo "Starting Chrome extension installation"
+echo "Starting Chrome extension installation..."
+
+rem Set the current folder path
 set "EXTENSION_PATH=%cd%"
 
-rem Open Chrome Extensions page
-start chrome chrome://extensions/
+rem Open Chrome Extensions page using full path to Chrome
+"C:\Program Files\Google\Chrome\Application\chrome.exe" chrome://extensions/
 
 rem Instructions for the user
-echo "Please enable Developer Mode in Chrome."
-echo "Then click 'Load unpacked' and select the following folder:"
+echo "========================================"
+echo "Installation Instructions:"
+echo "1. Opene the Extensions page.--(chrome://extensions/)"
+echo "2. Please enable 'Developer Mode' in the top right corner."
+echo "3. Click 'Load unpacked' and select the folder:"
 echo "%EXTENSION_PATH%"
+echo "========================================"
 pause
