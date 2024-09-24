@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Ad Muter",
+    "version": "1.0",
+    "description": "Mutes the audio when ads play during YouTube videos.",
+    "permissions": ["tabs", "storage"],
+    "content_scripts": [
+      {
+        "matches": ["*://www.youtube.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "icons": {
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "48": "icon48.png"
+      }
+    }
+  }
+  
